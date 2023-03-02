@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Jost', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    background-color: white;
+    position: fixed;
+    width: 110%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0  10%;
+}
+.logo img{
+    max-width: 190px;
+    height: auto;
+}
+
+.navmenu{
+    display: flex;
+    
+
+}
+
+.navmenu a{
+   color: black;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+.navmenu a:hover{
+    color:green;
+
+}
+.nav-icon{
+    display: flex;
+    align-items: center;
+}
+.nav-icon i{
+    margin-right: 20px;
+    color: black;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+.nav-icon i:hover{
+    transform: scale(1.1);
+    color:green;
+}
+#menu-icon{
+    font-size: 35px;
+    color: black;
+    z-index: 10001;
+    cursor: pointer;
+
+}
+
+section {
+    padding: 10%  2%;
+}
+.main-home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(imagenes/fondo1.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+
+.main-text h5{
+    color: #000;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.main-text h1{
+    color: #000;
+    font-size: 45px;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+}
+.main-text p{
+    color: #000;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.main-btn{
+    display: inline-block;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid #111;
+    padding: 12px 25px;
+    transition: all .42s ease;
+}
+.main-btn:hover{
+    background-color: #000;
+    color:white;
+}
+
+.down-arrow{
+    color: #fff;
+    position: absolute;
+    top: 80%;
+    right: 11%;
+}
+
+.down i{
+    font-size: 30px;
+ background-color: #2c2c2c;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 12px 12px;
+}
+.down i:hover{
+    background-color: #2c2c2c;
+    color:  white;
+    transition: all .42s ease;
+}
+
+header.sticky{
+    background: #fff;
+    padding: 20px 10%;
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 10%);
+}
+
+.center-text h2{
+    color: #111;
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.center-text span{
+    color: green;
+}
+
+.productos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    gap: 2rem;
+}
+
+.row{
+    position: relative;
+    transition: all .40s;
+}
+
+
+.row img{
+    width: 100%;
+    height: auto;
+    transition: all .40s;
+}
+
+.row img:hover{
+    transform: scale(0.9);
+
+}
+
+.producto-text h5{
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: green;
+    padding: 3px 10px;
+    border-radius: 2px;
+
+}
+
+.heart{
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+
+}
+
+.heart:hover{
+    color: #ee1c47;
+
+}
+
+.ratting{
+    color: #ff8c00;
+    font-size: 18px
+
+}
+
+.precio h4{
+    color: #111;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+
+}
+
+.precio p{
+    color: #151515;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.contacto{
+    background-color:silver;
+}
+
+.contacto-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    gap: 3rem;
+}
+
+.primera-info img{
+    width: 180px;
+    height: auto;
+}
+
+.contacto-info h4{
+    color: #212529;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.contacto-info p{
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .42;
+
+}
+
+.contacto-info p:hover{
+    color: green;
+}
+
+.social-icon i{
+    color: gray;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: all .42;
+}
+
+.social-icon i:hover{
+    transform: scale(1.3);
+    color: green;
+}
+
+@media(max-width:890px) {
+    header{
+        padding: 20px 3%;
+        transition: .42;
+    }
+    
+}
+
+@media(max-width:630px){
+    .main-text h1{
+        font-size: 30px;
+        transition: .42;
+    }
+    .main-text p{
+        font-size: 15px;
+        transition: .42;
+
+    }
+
+ 
+    .main-btn{
+        padding: 10px 20px;
+        transition: .42;
+
+    }
+}
+   
+@media(max-width:750px){
+    .navmenu{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 150px;
+        height: 130vh;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 120px 30px;
+        transition: all .42;
+        background-color: white;
+    }
+
+   
+    .navmenu a{
+        display: block;
+        margin: 18px 0;
+    }
+       
+    .navmenu.open{
+        right: 0;
+    }
+}
