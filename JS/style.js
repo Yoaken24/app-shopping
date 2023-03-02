@@ -9,3 +9,4 @@ menu.onclick = () => {
     menu.classList.toggle('bx-x');
     navmenu.classList.toggle('open');
 }
+
